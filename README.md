@@ -1,6 +1,6 @@
 
 todo:
-eslint, pinia, i18n
+pinia, i18n
 
 # Vue 3 + TypeScript + Vite
 

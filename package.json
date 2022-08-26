@@ -2,7 +2,6 @@
   "name": "bunny-vite-plus",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -15,10 +14,23 @@
   },
   "devDependencies": {
     "@eslint/create-config": "0.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
     "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/eslint-config-typescript": "^11.0.0",
     "eslint": "^8.22.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.4.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
+    "vue-eslint-parser": "^9.0.3",
     "vue-tsc": "^0.39.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": "eslint"
   }
 }
